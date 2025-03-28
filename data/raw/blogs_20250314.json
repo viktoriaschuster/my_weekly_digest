@@ -1,0 +1,90 @@
+[
+  {
+    "title": "On the Biology of a Large Language Model",
+    "url": "https://transformer-circuits.pub/2025/attribution-graphs/biology.html",
+    "published": "2025-03-28",
+    "abstract": "We investigate the internal mechanisms used by Claude 3.5 Haiku \u2014 Anthropic's lightweight production model \u2014 in a variety of contexts.",
+    "authors": "Anthropic Transformer Circuits Team",
+    "source": "transformer_circuits"
+  },
+  {
+    "title": "Circuit Tracing: Revealing Computational Graphs in Language Models",
+    "url": "https://transformer-circuits.pub/2025/attribution-graphs/methods.html",
+    "published": "2025-03-28",
+    "abstract": "We describe an approach to tracing the \"step-by-step\" computation involved when a model responds to a single prompt.",
+    "authors": "Anthropic Transformer Circuits Team",
+    "source": "transformer_circuits"
+  },
+  {
+    "title": "Anthropic Economic Index: Insights from Claude 3.7 Sonnet",
+    "url": "https://www.anthropic.com/news/anthropic-economic-index-insights-from-claude-sonnet-3-7",
+    "published": "2025-03-27",
+    "abstract": "Announcements\u00a0\u00a0\u00b7\u00a0\u00a0Societal Impacts",
+    "authors": "Anthropic",
+    "source": "anthropic_news"
+  },
+  {
+    "title": "Tracing the thoughts of a large language model",
+    "url": "https://www.anthropic.com/research/tracing-thoughts-language-model",
+    "published": "2025-03-27",
+    "abstract": "Interpretability",
+    "authors": "Anthropic",
+    "source": "anthropic_news"
+  },
+  {
+    "title": "Claude can now search the web",
+    "url": "https://www.anthropic.com/news/web-search",
+    "published": "2025-03-20",
+    "abstract": "Product",
+    "authors": "Anthropic",
+    "source": "anthropic_news"
+  },
+  {
+    "title": "Anthropic\u2019s Response to Governor Newsom\u2019s AI Working Group Draft Report",
+    "url": "https://www.anthropic.com/news/anthropic-s-response-to-governor-newsom-s-ai-working-group-draft-report",
+    "published": "2025-03-19",
+    "abstract": "Societal Impacts",
+    "authors": "Anthropic",
+    "source": "anthropic_news"
+  },
+  {
+    "title": "Progress from our Frontier Red Team",
+    "url": "https://www.anthropic.com/news/strategic-warning-for-ai-risk-progress-and-insights-from-our-frontier-red-team",
+    "published": "2025-03-19",
+    "abstract": "Policy",
+    "authors": "Anthropic",
+    "source": "anthropic_news"
+  },
+  {
+    "title": "Addendum to GPT-4o System Card: 4o image generation",
+    "url": "https://openai.com/index/gpt-4o-image-generation-system-card-addendum/",
+    "published": "2025-03-25",
+    "abstract": "4o image generation is a new, significantly more capable image generation approach than our earlier DALL\u00b7E 3 series of models. It can create photorealistic output. It can take images as inputs and transform them.",
+    "authors": "OpenAI",
+    "source": "openai_publications"
+  },
+  {
+    "title": "Early methods for studying affective use and emotional well-being on ChatGPT",
+    "url": "https://openai.com/index/affective-use-study/",
+    "published": "2025-03-21",
+    "abstract": "An OpenAI and MIT Media Lab Research collaboration.",
+    "authors": "OpenAI",
+    "source": "openai_publications"
+  },
+  {
+    "title": "Generative Ghosts: Anticipating Benefits and Risks of AI Afterlives",
+    "url": "https://deepmind.google/research/publications/65827/",
+    "published": "2025-03-28",
+    "abstract": "ACM CHI 2025",
+    "authors": "Meredith Ringel Morris and Jed R. Brubaker",
+    "source": "deepmind_research"
+  },
+  {
+    "title": "Effective Kernel Fuzzing with Learned White-box Test Mutators",
+    "url": "https://deepmind.google/research/publications/127036/",
+    "published": "2025-03-28",
+    "abstract": "ASPLOS 2025 (Fall Cycle)",
+    "authors": "Sishuai Gong, Wang Rui, Deniz Altinb\u00fcken, Pedro Fonseca, Petros Maniatis",
+    "source": "deepmind_research"
+  }
+]

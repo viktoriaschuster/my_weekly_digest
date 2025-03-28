@@ -1,0 +1,17 @@
+{
+  "ml_terms": [
+    "machine learning",
+    "mechanistic interpretability",
+    "explainable AI",
+    "interpretability",
+    "feature learning",
+    "transfer learning",
+    "reinforcement learning"
+  ],
+  "biology_terms": [
+    "protein function",
+    "gene expression",
+    "multi-modal"
+  ],
+  "exclude_terms": []
+}

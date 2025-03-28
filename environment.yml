@@ -1,0 +1,19 @@
+name: research-digest
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - requests
+  - beautifulsoup4
+  - feedparser
+  - pandas
+  - pyyaml
+  - markdown
+  - pip:
+    - arxiv
+    - reportlab
+    - weasyprint
+    - selenium
+    - webdriver-manager

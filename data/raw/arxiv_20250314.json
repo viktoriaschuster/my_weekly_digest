@@ -1,0 +1,690 @@
+[
+  {
+    "title": "Semantic Library Adaptation: LoRA Retrieval and Fusion for Open-Vocabulary Semantic Segmentation",
+    "authors": "Reza Qorbani, Gianluca Villani, Theodoros Panagiotakopoulos, Marc Botet Colomer, Linus H\u00e4renstam-Nielsen, Mattia Segu, Pier Luigi Dovesi, Jussi Karlgren, Daniel Cremers, Federico Tombari, Matteo Poggi",
+    "abstract": "Open-vocabulary semantic segmentation models associate vision and text to\nlabel pixels from an undefined set of classes using textual queries, providing\nversatile performance on novel datasets. However, large shifts between training\nand test domains degrade their performance, requiring fine-tuning for effective\nreal-world applications. We introduce Semantic Library Adaptation (SemLA), a\nnovel framework for training-free, test-time domain adaptation. SemLA leverages\na library of LoRA-based adapters indexed with CLIP embeddings, dynamically\nmerging the most relevant adapters based on proximity to the target domain in\nthe embedding space. This approach constructs an ad-hoc model tailored to each\nspecific input without additional training. Our method scales efficiently,\nenhances explainability by tracking adapter contributions, and inherently\nprotects data privacy, making it ideal for sensitive applications.\nComprehensive experiments on a 20-domain benchmark built over 10 standard\ndatasets demonstrate SemLA's superior adaptability and performance across\ndiverse settings, establishing a new standard in domain adaptation for\nopen-vocabulary semantic segmentation.",
+    "url": "http://arxiv.org/abs/2503.21780v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21780v1",
+    "published": "2025-03-27T17:59:58+00:00",
+    "updated": "2025-03-27T17:59:58+00:00",
+    "categories": [
+      "cs.CV"
+    ],
+    "source": "arxiv"
+  },
+  {
+    "title": "VideoMage: Multi-Subject and Motion Customization of Text-to-Video Diffusion Models",
+    "authors": "Chi-Pin Huang, Yen-Siang Wu, Hung-Kai Chung, Kai-Po Chang, Fu-En Yang, Yu-Chiang Frank Wang",
+    "abstract": "Customized text-to-video generation aims to produce high-quality videos that\nincorporate user-specified subject identities or motion patterns. However,\nexisting methods mainly focus on personalizing a single concept, either subject\nidentity or motion pattern, limiting their effectiveness for multiple subjects\nwith the desired motion patterns. To tackle this challenge, we propose a\nunified framework VideoMage for video customization over both multiple subjects\nand their interactive motions. VideoMage employs subject and motion LoRAs to\ncapture personalized content from user-provided images and videos, along with\nan appearance-agnostic motion learning approach to disentangle motion patterns\nfrom visual appearance. Furthermore, we develop a spatial-temporal composition\nscheme to guide interactions among subjects within the desired motion patterns.\nExtensive experiments demonstrate that VideoMage outperforms existing methods,\ngenerating coherent, user-controlled videos with consistent subject identities\nand interactions.",
+    "url": "http://arxiv.org/abs/2503.21781v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21781v1",
+    "published": "2025-03-27T17:59:58+00:00",
+    "updated": "2025-03-27T17:59:58+00:00",
+    "categories": [
+      "cs.CV"
+    ],
+    "source": "arxiv"
+  },
+  {
+    "title": "X$^{2}$-Gaussian: 4D Radiative Gaussian Splatting for Continuous-time Tomographic Reconstruction",
+    "authors": "Weihao Yu, Yuanhao Cai, Ruyi Zha, Zhiwen Fan, Chenxin Li, Yixuan Yuan",
+    "abstract": "Four-dimensional computed tomography (4D CT) reconstruction is crucial for\ncapturing dynamic anatomical changes but faces inherent limitations from\nconventional phase-binning workflows. Current methods discretize temporal\nresolution into fixed phases with respiratory gating devices, introducing\nmotion misalignment and restricting clinical practicality. In this paper, We\npropose X$^2$-Gaussian, a novel framework that enables continuous-time 4D-CT\nreconstruction by integrating dynamic radiative Gaussian splatting with\nself-supervised respiratory motion learning. Our approach models anatomical\ndynamics through a spatiotemporal encoder-decoder architecture that predicts\ntime-varying Gaussian deformations, eliminating phase discretization. To remove\ndependency on external gating devices, we introduce a physiology-driven\nperiodic consistency loss that learns patient-specific breathing cycles\ndirectly from projections via differentiable optimization. Extensive\nexperiments demonstrate state-of-the-art performance, achieving a 9.93 dB PSNR\ngain over traditional methods and 2.25 dB improvement against prior Gaussian\nsplatting techniques. By unifying continuous motion modeling with hardware-free\nperiod learning, X$^2$-Gaussian advances high-fidelity 4D CT reconstruction for\ndynamic clinical imaging. Project website at: https://x2-gaussian.github.io/.",
+    "url": "http://arxiv.org/abs/2503.21779v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21779v1",
+    "published": "2025-03-27T17:59:57+00:00",
+    "updated": "2025-03-27T17:59:57+00:00",
+    "categories": [
+      "cs.CV"
+    ],
+    "source": "arxiv"
+  },
+  {
+    "title": "Test-Time Visual In-Context Tuning",
+    "authors": "Jiahao Xie, Alessio Tonioni, Nathalie Rauschmayr, Federico Tombari, Bernt Schiele",
+    "abstract": "Visual in-context learning (VICL), as a new paradigm in computer vision,\nallows the model to rapidly adapt to various tasks with only a handful of\nprompts and examples. While effective, the existing VICL paradigm exhibits poor\ngeneralizability under distribution shifts. In this work, we propose test-time\nVisual In-Context Tuning (VICT), a method that can adapt VICL models on the fly\nwith a single test sample. Specifically, we flip the role between the task\nprompts and the test sample and use a cycle consistency loss to reconstruct the\noriginal task prompt output. Our key insight is that a model should be aware of\na new test distribution if it can successfully recover the original task\nprompts. Extensive experiments on six representative vision tasks ranging from\nhigh-level visual understanding to low-level image processing, with 15 common\ncorruptions, demonstrate that our VICT can improve the generalizability of VICL\nto unseen new domains. In addition, we show the potential of applying VICT for\nunseen tasks at test time. Code: https://github.com/Jiahao000/VICT.",
+    "url": "http://arxiv.org/abs/2503.21777v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21777v1",
+    "published": "2025-03-27T17:59:52+00:00",
+    "updated": "2025-03-27T17:59:52+00:00",
+    "categories": [
+      "cs.CV",
+      "cs.LG"
+    ],
+    "source": "arxiv"
+  },
+  {
+    "title": "Video-R1: Reinforcing Video Reasoning in MLLMs",
+    "authors": "Kaituo Feng, Kaixiong Gong, Bohao Li, Zonghao Guo, Yibing Wang, Tianshuo Peng, Benyou Wang, Xiangyu Yue",
+    "abstract": "Inspired by DeepSeek-R1's success in eliciting reasoning abilities through\nrule-based reinforcement learning (RL), we introduce Video-R1 as the first\nattempt to systematically explore the R1 paradigm for eliciting video reasoning\nwithin multimodal large language models (MLLMs). However, directly applying RL\ntraining with the GRPO algorithm to video reasoning presents two primary\nchallenges: (i) a lack of temporal modeling for video reasoning, and (ii) the\nscarcity of high-quality video-reasoning data. To address these issues, we\nfirst propose the T-GRPO algorithm, which encourages models to utilize temporal\ninformation in videos for reasoning. Additionally, instead of relying solely on\nvideo data, we incorporate high-quality image-reasoning data into the training\nprocess. We have constructed two datasets: Video-R1-COT-165k for SFT cold start\nand Video-R1-260k for RL training, both comprising image and video data.\nExperimental results demonstrate that Video-R1 achieves significant\nimprovements on video reasoning benchmarks such as VideoMMMU and VSI-Bench, as\nwell as on general video benchmarks including MVBench and TempCompass, etc.\nNotably, Video-R1-7B attains a 35.8% accuracy on video spatial reasoning\nbenchmark VSI-bench, surpassing the commercial proprietary model GPT-4o. All\ncodes, models, data are released.",
+    "url": "http://arxiv.org/abs/2503.21776v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21776v1",
+    "published": "2025-03-27T17:59:51+00:00",
+    "updated": "2025-03-27T17:59:51+00:00",
+    "categories": [
+      "cs.CV"
+    ],
+    "source": "arxiv"
+  },
+  {
+    "title": "StyleMotif: Multi-Modal Motion Stylization using Style-Content Cross Fusion",
+    "authors": "Ziyu Guo, Young Yoon Lee, Joseph Liu, Yizhak Ben-Shabat, Victor Zordan, Mubbasir Kapadia",
+    "abstract": "We present StyleMotif, a novel Stylized Motion Latent Diffusion model,\ngenerating motion conditioned on both content and style from multiple\nmodalities. Unlike existing approaches that either focus on generating diverse\nmotion content or transferring style from sequences, StyleMotif seamlessly\nsynthesizes motion across a wide range of content while incorporating stylistic\ncues from multi-modal inputs, including motion, text, image, video, and audio.\nTo achieve this, we introduce a style-content cross fusion mechanism and align\na style encoder with a pre-trained multi-modal model, ensuring that the\ngenerated motion accurately captures the reference style while preserving\nrealism. Extensive experiments demonstrate that our framework surpasses\nexisting methods in stylized motion generation and exhibits emergent\ncapabilities for multi-modal motion stylization, enabling more nuanced motion\nsynthesis. Source code and pre-trained models will be released upon acceptance.\nProject Page: https://stylemotif.github.io",
+    "url": "http://arxiv.org/abs/2503.21775v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21775v1",
+    "published": "2025-03-27T17:59:46+00:00",
+    "updated": "2025-03-27T17:59:46+00:00",
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.CL",
+      "cs.LG"
+    ],
+    "source": "arxiv"
+  },
+  {
+    "title": "Simulating quantum circuits with restricted quantum computers",
+    "authors": "Christophe Piveteau",
+    "abstract": "It is one of the most fundamental objectives in quantum information science\nto understand the boundary between the computational power of classical and\nquantum computers. One possible avenue to explore this boundary is to identify\nclasses of quantum circuits that can be efficiently simulated on a classical\ncomputer. Instead of simulating a general quantum circuit with a classical\ndevice, new schemes have recently emerged to simulate them on a quantum device\nthat is restricted in some manner. As such, these techniques allow us to study\nhow the restrictions impact the computational power of the device. One such\ntechnique is called quasiprobability simulation (QPS) and it estimates the\nresult of a quantum circuit with a Monte Carlo procedure that randomly replaces\ncircuit elements with ones that can be executed on the restricted quantum\ndevice.\n  The main focus of this thesis is dedicated to the QPS-based simulation of\nnonlocal quantum computation using local quantum operations. On the practical\nside, this enables the simulation of large quantum circuits using multiple\nsmaller quantum devices - a procedure that is sometimes called circuit\nknitting. We uncover a rich mathematical formalism with many connections to the\nresource theory of entanglement. We characterize the optimal simulation\noverhead for a broad range of practically relevant nonlocal states and channels\nand we explicitly provide achieving protocols. Moreover, we also investigate\nthe utility of classical communication between the local parties. Our results\naddress both the single-shot and asymptotic regime.\n  We frame QPS in a quantum resource theoretic framework, which highlights\nsimilarities that arise in the different instantiations of the technique.\nFurthermore, we study the importance of classical side information in the QPS\nprocedure and how it impacts the overhead and expressibility of QPS.",
+    "url": "http://arxiv.org/abs/2503.21773v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21773v1",
+    "published": "2025-03-27T17:59:45+00:00",
+    "updated": "2025-03-27T17:59:45+00:00",
+    "categories": [
+      "quant-ph"
+    ],
+    "source": "arxiv"
+  },
+  {
+    "title": "Results on branching random walks and rumor processes via germ order",
+    "authors": "Daniela Bertacchi, Fabio Zucca",
+    "abstract": "Germ order is a non-standard stochastic order defined through the comparison\nof the generating functions of the processes. This order was first introduced\nfor branching random walks with a constant breeding law and independent\ndispersal of offspring, which are characterized by a one-dimensional generating\nfunction. In this work, we investigate the properties of the extension of this\nconcept to processes characterized by a multidimensional generating function,\nsuch as general branching random walks and rumor processes. In particular, we\nuse germ ordering to characterize the behavior of certain branching random\nwalks and rumor processes with inhomogeneous breeding/transmitting laws.",
+    "url": "http://arxiv.org/abs/2503.21768v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21768v1",
+    "published": "2025-03-27T17:59:06+00:00",
+    "updated": "2025-03-27T17:59:06+00:00",
+    "categories": [
+      "math.PR",
+      "60J80"
+    ],
+    "source": "arxiv"
+  },
+  {
+    "title": "Stable-SCore: A Stable Registration-based Framework for 3D Shape Correspondence",
+    "authors": "Haolin Liu, Xiaohang Zhan, Zizheng Yan, Zhongjin Luo, Yuxin Wen, Xiaoguang Han",
+    "abstract": "Establishing character shape correspondence is a critical and fundamental\ntask in computer vision and graphics, with diverse applications including\nre-topology, attribute transfer, and shape interpolation. Current dominant\nfunctional map methods, while effective in controlled scenarios, struggle in\nreal situations with more complex challenges such as non-isometric shape\ndiscrepancies. In response, we revisit registration-for-correspondence methods\nand tap their potential for more stable shape correspondence estimation. To\novercome their common issues including unstable deformations and the necessity\nfor careful pre-alignment or high-quality initial 3D correspondences, we\nintroduce Stable-SCore: A Stable Registration-based Framework for 3D Shape\nCorrespondence. We first re-purpose a foundation model for 2D character\ncorrespondence that ensures reliable and stable 2D mappings. Crucially, we\npropose a novel Semantic Flow Guided Registration approach that leverages 2D\ncorrespondence to guide mesh deformations. Our framework significantly\nsurpasses existing methods in challenging scenarios, and brings possibilities\nfor a wide array of real applications, as demonstrated in our results.",
+    "url": "http://arxiv.org/abs/2503.21766v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21766v1",
+    "published": "2025-03-27T17:59:02+00:00",
+    "updated": "2025-03-27T17:59:02+00:00",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "source": "arxiv"
+  },
+  {
+    "title": "Exploring the Evolution of Physics Cognition in Video Generation: A Survey",
+    "authors": "Minghui Lin, Xiang Wang, Yishan Wang, Shu Wang, Fengqi Dai, Pengxiang Ding, Cunxiang Wang, Zhengrong Zuo, Nong Sang, Siteng Huang, Donglin Wang",
+    "abstract": "Recent advancements in video generation have witnessed significant progress,\nespecially with the rapid advancement of diffusion models. Despite this, their\ndeficiencies in physical cognition have gradually received widespread attention\n- generated content often violates the fundamental laws of physics, falling\ninto the dilemma of ''visual realism but physical absurdity\". Researchers began\nto increasingly recognize the importance of physical fidelity in video\ngeneration and attempted to integrate heuristic physical cognition such as\nmotion representations and physical knowledge into generative systems to\nsimulate real-world dynamic scenarios. Considering the lack of a systematic\noverview in this field, this survey aims to provide a comprehensive summary of\narchitecture designs and their applications to fill this gap. Specifically, we\ndiscuss and organize the evolutionary process of physical cognition in video\ngeneration from a cognitive science perspective, while proposing a three-tier\ntaxonomy: 1) basic schema perception for generation, 2) passive cognition of\nphysical knowledge for generation, and 3) active cognition for world\nsimulation, encompassing state-of-the-art methods, classical paradigms, and\nbenchmarks. Subsequently, we emphasize the inherent key challenges in this\ndomain and delineate potential pathways for future research, contributing to\nadvancing the frontiers of discussion in both academia and industry. Through\nstructured review and interdisciplinary analysis, this survey aims to provide\ndirectional guidance for developing interpretable, controllable, and physically\nconsistent video generation paradigms, thereby propelling generative models\nfrom the stage of ''visual mimicry'' towards a new phase of ''human-like\nphysical comprehension''.",
+    "url": "http://arxiv.org/abs/2503.21765v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21765v1",
+    "published": "2025-03-27T17:58:33+00:00",
+    "updated": "2025-03-27T17:58:33+00:00",
+    "categories": [
+      "cs.CV"
+    ],
+    "source": "arxiv"
+  },
+  {
+    "title": "On the open TS/ST correspondence",
+    "authors": "Matijn Fran\u00e7ois, Alba Grassi",
+    "abstract": "The topological string/spectral theory correspondence establishes a precise,\nnon-perturbative duality between topological strings on local Calabi-Yau\nthreefolds and the spectral theory of quantized mirror curves. While this\nduality has been rigorously formulated for the closed topological string\nsector, the open string sector remains less understood. Building on the results\nof [1-3], we make further progress in this direction by constructing entire,\noff-shell eigenfunctions for the quantized mirror curve from open topological\nstring partition functions. We focus on local $\\mathbb{F}_0$, whose mirror\ncurve corresponds to the Baxter equation of the two-particle, relativistic Toda\nlattice. We then study the standard and dual four-dimensional limits, where the\nquantum mirror curve for local $\\mathbb{F}_0$ degenerates into the modified\nMathieu and McCoy-Tracy-Wu operators, respectively. In these limits, our\nframework provides a way to construct entire, off-shell eigenfunctions for the\ndifference equations associated with these operators. Furthermore, we find a\nsimple relation between the on-shell eigenfunctions of the modified Mathieu and\nMcCoy-Tracy-Wu operators, leading to a functional relation between the\noperators themselves.",
+    "url": "http://arxiv.org/abs/2503.21762v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21762v1",
+    "published": "2025-03-27T17:57:37+00:00",
+    "updated": "2025-03-27T17:57:37+00:00",
+    "categories": [
+      "hep-th",
+      "math-ph",
+      "math.MP",
+      "math.SP"
+    ],
+    "source": "arxiv"
+  },
+  {
+    "title": "Uni4D: Unifying Visual Foundation Models for 4D Modeling from a Single Video",
+    "authors": "David Yifan Yao, Albert J. Zhai, Shenlong Wang",
+    "abstract": "This paper presents a unified approach to understanding dynamic scenes from\ncasual videos. Large pretrained vision foundation models, such as\nvision-language, video depth prediction, motion tracking, and segmentation\nmodels, offer promising capabilities. However, training a single model for\ncomprehensive 4D understanding remains challenging. We introduce Uni4D, a\nmulti-stage optimization framework that harnesses multiple pretrained models to\nadvance dynamic 3D modeling, including static/dynamic reconstruction, camera\npose estimation, and dense 3D motion tracking. Our results show\nstate-of-the-art performance in dynamic 4D modeling with superior visual\nquality. Notably, Uni4D requires no retraining or fine-tuning, highlighting the\neffectiveness of repurposing visual foundation models for 4D understanding.",
+    "url": "http://arxiv.org/abs/2503.21761v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21761v1",
+    "published": "2025-03-27T17:57:32+00:00",
+    "updated": "2025-03-27T17:57:32+00:00",
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "source": "arxiv"
+  },
+  {
+    "title": "Fwd2Bot: LVLM Visual Token Compression with Double Forward Bottleneck",
+    "authors": "Adrian Bulat, Yassine Ouali, Georgios Tzimiropoulos",
+    "abstract": "In this work, we aim to compress the vision tokens of a Large Vision Language\nModel (LVLM) into a representation that is simultaneously suitable for (a)\ngenerative and (b) discriminative tasks, (c) is nearly lossless, and (d) is\nstorage-efficient. We propose a novel compression approach, called Fwd2Bot,\nthat uses the LVLM itself to compress the visual information in a task-agnostic\nmanner. At the core of Fwd2bot there exists a \"double-forward pass\" training\nstrategy, whereby, during the first forward pass, the LLM (of the LVLM) creates\na bottleneck by condensing the visual information into a small number of\nsummary tokens. Then, using the same LLM, the second forward pass processes the\nlanguage instruction(s) alongside the summary tokens, used as a direct\nreplacement for the image ones. The training signal is provided by two losses:\nan autoregressive one applied after the second pass that provides a direct\noptimization objective for compression, and a contrastive loss, applied after\nthe first pass, that further boosts the representation strength, especially for\ndiscriminative tasks. The training is further enhanced by stage-specific\nadapters. We accompany the proposed method by an in-depth ablation study.\nOverall, Fwd2Bot results in highly-informative compressed representations\nsuitable for both generative and discriminative tasks. For generative tasks, we\noffer a 2x higher compression rate without compromising the generative\ncapabilities, setting a new state-of-the-art result. For discriminative tasks,\nwe set a new state-of-the-art on image retrieval and compositionality.",
+    "url": "http://arxiv.org/abs/2503.21757v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21757v1",
+    "published": "2025-03-27T17:57:07+00:00",
+    "updated": "2025-03-27T17:57:07+00:00",
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "source": "arxiv"
+  },
+  {
+    "title": "A Unified Framework for Diffusion Bridge Problems: Flow Matching and Schr\u00f6dinger Matching into One",
+    "authors": "Minyoung Kim",
+    "abstract": "The bridge problem is to find an SDE (or sometimes an ODE) that bridges two\ngiven distributions. The application areas of the bridge problem are enormous,\namong which the recent generative modeling (e.g., conditional or unconditional\nimage generation) is the most popular. Also the famous Schr\\\"{o}dinger bridge\nproblem, a widely known problem for a century, is a special instance of the\nbridge problem. Two most popular algorithms to tackle the bridge problems in\nthe deep learning era are: (conditional) flow matching and iterative fitting\nalgorithms, where the former confined to ODE solutions, and the latter\nspecifically for the Schr\\\"{o}dinger bridge problem. The main contribution of\nthis article is in two folds: i) We provide concise reviews of these algorithms\nwith technical details to some extent; ii) We propose a novel unified\nperspective and framework that subsumes these seemingly unrelated algorithms\n(and their variants) into one. In particular, we show that our unified\nframework can instantiate the Flow Matching (FM) algorithm, the (mini-batch)\noptimal transport FM algorithm, the (mini-batch) Schr\\\"{o}dinger bridge FM\nalgorithm, and the deep Schr\\\"{o}dinger bridge matching (DSBM) algorithm as its\nspecial cases. We believe that this unified framework will be useful for\nviewing the bridge problems in a more general and flexible perspective, and in\nturn can help researchers and practitioners to develop new bridge algorithms in\ntheir fields.",
+    "url": "http://arxiv.org/abs/2503.21756v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21756v1",
+    "published": "2025-03-27T17:57:03+00:00",
+    "updated": "2025-03-27T17:57:03+00:00",
+    "categories": [
+      "cs.LG"
+    ],
+    "source": "arxiv"
+  },
+  {
+    "title": "VBench-2.0: Advancing Video Generation Benchmark Suite for Intrinsic Faithfulness",
+    "authors": "Dian Zheng, Ziqi Huang, Hongbo Liu, Kai Zou, Yinan He, Fan Zhang, Yuanhan Zhang, Jingwen He, Wei-Shi Zheng, Yu Qiao, Ziwei Liu",
+    "abstract": "Video generation has advanced significantly, evolving from producing\nunrealistic outputs to generating videos that appear visually convincing and\ntemporally coherent. To evaluate these video generative models, benchmarks such\nas VBench have been developed to assess their faithfulness, measuring factors\nlike per-frame aesthetics, temporal consistency, and basic prompt adherence.\nHowever, these aspects mainly represent superficial faithfulness, which focus\non whether the video appears visually convincing rather than whether it adheres\nto real-world principles. While recent models perform increasingly well on\nthese metrics, they still struggle to generate videos that are not just\nvisually plausible but fundamentally realistic. To achieve real \"world models\"\nthrough video generation, the next frontier lies in intrinsic faithfulness to\nensure that generated videos adhere to physical laws, commonsense reasoning,\nanatomical correctness, and compositional integrity. Achieving this level of\nrealism is essential for applications such as AI-assisted filmmaking and\nsimulated world modeling. To bridge this gap, we introduce VBench-2.0, a\nnext-generation benchmark designed to automatically evaluate video generative\nmodels for their intrinsic faithfulness. VBench-2.0 assesses five key\ndimensions: Human Fidelity, Controllability, Creativity, Physics, and\nCommonsense, each further broken down into fine-grained capabilities. Tailored\nfor individual dimensions, our evaluation framework integrates generalists such\nas state-of-the-art VLMs and LLMs, and specialists, including anomaly detection\nmethods proposed for video generation. We conduct extensive annotations to\nensure alignment with human judgment. By pushing beyond superficial\nfaithfulness toward intrinsic faithfulness, VBench-2.0 aims to set a new\nstandard for the next generation of video generative models in pursuit of\nintrinsic faithfulness.",
+    "url": "http://arxiv.org/abs/2503.21755v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21755v1",
+    "published": "2025-03-27T17:57:01+00:00",
+    "updated": "2025-03-27T17:57:01+00:00",
+    "categories": [
+      "cs.CV"
+    ],
+    "source": "arxiv"
+  },
+  {
+    "title": "Hypergraphic zonotopes and acyclohedra",
+    "authors": "Cosmin Pohoata, Daniel G. Zhu",
+    "abstract": "We introduce a higher-uniformity analogue of graphic zonotopes and\npermutohedra. Specifically, given a $(d+1)$-uniform hypergraph $H$, we define\nits hypergraphic zonotope $\\mathcal{Z}_H$, and when $H$ is the complete\n$(d+1)$-uniform hypergraph $K^{(d+1)}_n$, we call its hypergraphic zonotope the\nacyclohedron $\\mathcal{A}_{n,d}$.\n  We express the volume of $\\mathcal{Z}_H$ as a homologically weighted count of\nthe spanning $d$-dimensional hypertrees of $H$, which is closely related to\nKalai's generalization of Cayley's theorem in the case when $H=K^{(d+1)}_n$\n(but which, curiously, is not the same). We also relate the vertices of\nhypergraphic zonotopes to a notion of acyclic orientations previously studied\nby Linial and Morganstern for complete hypergraphs.",
+    "url": "http://arxiv.org/abs/2503.21752v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21752v1",
+    "published": "2025-03-27T17:56:42+00:00",
+    "updated": "2025-03-27T17:56:42+00:00",
+    "categories": [
+      "math.CO",
+      "52B05 (Primary) 05C20, 05E45 (Secondary)"
+    ],
+    "source": "arxiv"
+  },
+  {
+    "title": "LeX-Art: Rethinking Text Generation via Scalable High-Quality Data Synthesis",
+    "authors": "Shitian Zhao, Qilong Wu, Xinyue Li, Bo Zhang, Ming Li, Qi Qin, Dongyang Liu, Kaipeng Zhang, Hongsheng Li, Yu Qiao, Peng Gao, Bin Fu, Zhen Li",
+    "abstract": "We introduce LeX-Art, a comprehensive suite for high-quality text-image\nsynthesis that systematically bridges the gap between prompt expressiveness and\ntext rendering fidelity. Our approach follows a data-centric paradigm,\nconstructing a high-quality data synthesis pipeline based on Deepseek-R1 to\ncurate LeX-10K, a dataset of 10K high-resolution, aesthetically refined\n1024$\\times$1024 images. Beyond dataset construction, we develop LeX-Enhancer,\na robust prompt enrichment model, and train two text-to-image models, LeX-FLUX\nand LeX-Lumina, achieving state-of-the-art text rendering performance. To\nsystematically evaluate visual text generation, we introduce LeX-Bench, a\nbenchmark that assesses fidelity, aesthetics, and alignment, complemented by\nPairwise Normalized Edit Distance (PNED), a novel metric for robust text\naccuracy evaluation. Experiments demonstrate significant improvements, with\nLeX-Lumina achieving a 79.81% PNED gain on CreateBench, and LeX-FLUX\noutperforming baselines in color (+3.18%), positional (+4.45%), and font\naccuracy (+3.81%). Our codes, models, datasets, and demo are publicly\navailable.",
+    "url": "http://arxiv.org/abs/2503.21749v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21749v1",
+    "published": "2025-03-27T17:56:15+00:00",
+    "updated": "2025-03-27T17:56:15+00:00",
+    "categories": [
+      "cs.CV"
+    ],
+    "source": "arxiv"
+  },
+  {
+    "title": "Extracting energy via bosonic Gaussian operations",
+    "authors": "Frank Ernesto Quintela Rodriguez, Francesco Anna Mele, Salvatore Francesco Emanuele Oliviero, Vittorio Giovannetti, Ludovico Lami, Vasco Cavina",
+    "abstract": "Quantum thermodynamics is often formulated as a theory with constrained\naccess to operations and resources. In this manuscript, we find a closed\nformula for the Gaussian ergotropy, i.e. the maximum energy that can be\nextracted from bosonic systems governed by quadratic Hamiltonians by means of\nGaussian unitaries only. This formula resembles the well-known eigenvalue-based\nexpression for the standard ergotropy, but is instead formulated using\nsymplectic eigenvalues. We further prove that the Gaussian ergotropy is\nadditive, indicating that the multiple-copy scenario does not benefit from\nGaussian entangling operations. Extending our analysis to the relationship\nbetween ergotropic and entropic functions, we establish bounds linking entropic\nmeasures of Gaussianity to extractable work. Finally, we generalise our\nframework to open systems by studying the optimal state preparation that\nminimises the energy output in a Gaussian channel.",
+    "url": "http://arxiv.org/abs/2503.21748v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21748v1",
+    "published": "2025-03-27T17:56:00+00:00",
+    "updated": "2025-03-27T17:56:00+00:00",
+    "categories": [
+      "quant-ph"
+    ],
+    "source": "arxiv"
+  },
+  {
+    "title": "CTRL-O: Language-Controllable Object-Centric Visual Representation Learning",
+    "authors": "Aniket Didolkar, Andrii Zadaianchuk, Rabiul Awal, Maximilian Seitzer, Efstratios Gavves, Aishwarya Agrawal",
+    "abstract": "Object-centric representation learning aims to decompose visual scenes into\nfixed-size vectors called \"slots\" or \"object files\", where each slot captures a\ndistinct object. Current state-of-the-art object-centric models have shown\nremarkable success in object discovery in diverse domains, including complex\nreal-world scenes. However, these models suffer from a key limitation: they\nlack controllability. Specifically, current object-centric models learn\nrepresentations based on their preconceived understanding of objects, without\nallowing user input to guide which objects are represented. Introducing\ncontrollability into object-centric models could unlock a range of useful\ncapabilities, such as the ability to extract instance-specific representations\nfrom a scene. In this work, we propose a novel approach for user-directed\ncontrol over slot representations by conditioning slots on language\ndescriptions. The proposed ConTRoLlable Object-centric representation learning\napproach, which we term CTRL-O, achieves targeted object-language binding in\ncomplex real-world scenes without requiring mask supervision. Next, we apply\nthese controllable slot representations on two downstream vision language\ntasks: text-to-image generation and visual question answering. The proposed\napproach enables instance-specific text-to-image generation and also achieves\nstrong performance on visual question answering.",
+    "url": "http://arxiv.org/abs/2503.21747v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21747v1",
+    "published": "2025-03-27T17:53:50+00:00",
+    "updated": "2025-03-27T17:53:50+00:00",
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "source": "arxiv"
+  },
+  {
+    "title": "Effects of dissipation on phase diagram and bosonic excitations in the quark-meson model",
+    "authors": "Johannes V. Roth, Yunxin Ye, S\u00f6ren Schlichting, Lorenz von Smekal",
+    "abstract": "In this work we study the quark-meson model within a real-time formulation of\nthe functional renormalization group (FRG) on the Schwinger-Keldysh contour.\nFirst, we discuss in detail the symmetry of thermal equilibrium for the\nfermionic sector of the Keldysh action. We take into account dissipation for\nthe bosonic degrees of freedom in the spirit of the Caldeira-Leggett model by\ncoupling the system to an $O(4)$ invariant external heat bath. We study the\neffect of dissipation on static equilibrium properties, most prominently on the\nFRG flow of the effective potential and thus on the resulting phase diagram. We\nfind that, unlike in classical systems, through the contributions from non-zero\nMatsubara modes the dissipative dynamics can in general have an effect on\nstatic observables. We investigate these effects within two phenomenological\nmodels for the temperature dependence of the pion damping to verify that they\nare quantitatively small. To estimate their largest possible influence, we\nconsider limits where the damping constants approach infinity.",
+    "url": "http://arxiv.org/abs/2503.21746v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21746v1",
+    "published": "2025-03-27T17:53:22+00:00",
+    "updated": "2025-03-27T17:53:22+00:00",
+    "categories": [
+      "hep-ph"
+    ],
+    "source": "arxiv"
+  },
+  {
+    "title": "Les Houches lectures on non-perturbative Seiberg-Witten geometry",
+    "authors": "Lo\u00efc Bramley, Lotte Hollands, Subrabalan Murugesan",
+    "abstract": "In these lectures we detail the interplay between the low-energy dynamics of\nquantum field theories with four supercharges and the exact WKB analysis. This\nexposition may be the first comprehensive account of this connection,\ncontaining various novel arguments and illustrative examples.\n  The lectures start with the introduction of massive two-dimensional\n$\\mathcal{N}=(2,2)$ theories and their spectra of BPS solitons. We place these\ntheories in a two-dimensional cigar background with supersymmetric boundary\nconditions labelled by a phase $\\zeta = e^{i \\vartheta}$, while turning on the\ntwo-dimensional $\\Omega$-background with parameter~$\\epsilon$. We show that the\nresulting partition function $\\mathcal{Z}_{\\mathrm{2d}}^\\vartheta(\\epsilon)$\ncan be characterized as the Borel-summed solution, in the direction\n$\\vartheta$, to an associated Schr\\\"odinger equation. The partition function\n$\\mathcal{Z}_{\\mathrm{2d}}^\\vartheta(\\epsilon)$ is locally constant in the\nphase $\\vartheta$ and jumps across phases $\\vartheta_\\textrm{BPS}$ associated\nwith the BPS solitons. Since these jumps are non-perturbative in the\nparameter~$\\epsilon$, we refer to $Z^\\vartheta_\\mathrm{2d}(\\epsilon)$ as the\nnon-perturbative partition function for the original two-dimensional\n$\\mathcal{N}=(2,2)$ theory. We completely determine this partition function\n$\\mathcal{Z}^\\vartheta_\\mathrm{2d}(\\epsilon)$ in two classes of examples,\nLandau-Ginzburg models and gauged linear sigma models, and show that\n$\\mathcal{Z}^\\vartheta_\\mathrm{2d}(\\epsilon)$ encodes the well-known vortex\npartition function at a special phase $\\vartheta_\\textrm{FN}$ associated with\nthe presence of self-solitons. This analysis generalizes to four-dimensional\n$\\mathcal{N}=2$ theories in the $\\frac{1}{2} \\Omega$-background.",
+    "url": "http://arxiv.org/abs/2503.21742v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21742v1",
+    "published": "2025-03-27T17:51:48+00:00",
+    "updated": "2025-03-27T17:51:48+00:00",
+    "categories": [
+      "hep-th",
+      "math.CA",
+      "math.GT"
+    ],
+    "source": "arxiv"
+  },
+  {
+    "title": "Emergent Non-Markovian Gain in Open Quantum Systems",
+    "authors": "H. Z. Shen, Cheng Shang, Yan-Hui Zhou, X. X. Yi",
+    "abstract": "Non-Markovian dynamics go beyond the Markovian approximation by capturing\nmemory effects and information backflow in open quantum systems, which are\ncrucial for describing realistic physical processes. In this work, we study the\nexact non-Markovian dynamics of a driven cavity coupled to an anisotropic\nthree-dimensional photonic-crystal environment via counterrotating-wave\ninteractions. We derive an exact analytical expression for the cavity amplitude\nsatisfying the integro-differential equation, which includes the contributions\nof the bound states outside the continuum and the dissipative parts with the\ncontinuum spectrum. Based on the characteristic function method, we derive the\nexact non-Markovian master equation for the cavity, which contributes to the\ngain of the cavity. We give the physical origin of non-Markovian gain in the\npresence of bound states in the system consisting of cavity and environment,\nwhich has no Markovian counterparts due to the nonexponential gain in the\nnon-Markovian structured environment. We find that three different types of\nbound states can be formed in the system, containing one bound state with no\ninversion of photon number, two bound states with the periodic equal-amplitude\noscillation, and the gain with two complex roots without the bound states\nformation. We derive a current equation including the source from the driving\nfield, the transient current induced by the change in the number of photons,\nand the two-photon current caused by the counterrotating-wave term. The results\nare compared with those given by the rotating-wave interactions and extended to\na more general quantum network involving an arbitrary number of coupled\ncavities. Our findings may pave the way for a deeper understanding of\nnon-Markovian dynamics with gain in quantum networks involving\ncounterrotating-wave effects.",
+    "url": "http://arxiv.org/abs/2503.21739v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21739v1",
+    "published": "2025-03-27T17:50:46+00:00",
+    "updated": "2025-03-27T17:50:46+00:00",
+    "categories": [
+      "physics.optics"
+    ],
+    "source": "arxiv"
+  },
+  {
+    "title": "Galaxy Morphologies at Cosmic Noon with JWST : A Foundation for Exploring Gas Transport with Bars and Spiral Arms",
+    "authors": "Juan M. Espejo Salcedo, Stavros Pastras, Josef V\u00e1cha, Claudia Pulsoni, Reinhard Genzel, N. M. F\u00f6rster Schreiber, Jean-Baptiste Jolly, Capucine Barfety, Jianhang Chen, Giulia Tozzi, Daizhong Liu, Lilian Lee, Stijn Wuyts, Linda Tacconi, Ric Davies, Hannah \u00dcbler, Dieter Lutz, Emily Wisnioski, Jinyi Shangguan, Minju Lee, H. Sedona Price, Frank Eisenhauer, Alvio Renzini, Amit Nestor Shachar, Rodrigo Herrera-Camus",
+    "abstract": "How radial flows shape galaxy structure and evolution remains an open\nquestion. Internal drivers of such flows, such as bars and spiral arms, known\nto mediate gas flows in the local Universe, are now observable at high redshift\nthanks to JWST's unobscured view. We investigate the morphology of massive\nstar-forming galaxies at 0.8 < z < 1.3 and 2.0 < z < 2.5, epochs marking the\npeak and decline of cosmic star formation, both well-covered by kinematic\nsurveys. Using JWST/NIRCam imaging, we visually classify 1,451 galaxies,\nidentify non-axisymmetric features, count the number of spiral arms, analyze\nnon-parametric morphological indicators and study the dynamical support of the\nsample covered by kinematics (10% of the sample) as measured via v/{\\sigma}.\nDisk galaxies dominate the sample (82%), with 48% exhibiting spiral structure\nand 11% hosting bars. Both fractions decline with redshift, consistent with\nprevious studies. The proportion of two- and three-armed spirals remains\nlargely unchanged across redshift, with roughly two-thirds showing two arms and\none-third showing three arms in both bins. Notably, we find a higher incidence\nof three-armed spirals than reported in the local Universe, suggesting a mild\nevolution in spiral arm multiplicity. Non-parametric morphological metrics\nstrongly correlate with stellar mass but show no significant redshift\nevolution. Finally, kinematic analysis reveals a strong correlation between\ndisk morphology and rotational support, with most disks exhibiting v/{\\sigma} >\n3 and median values of v/{\\sigma} > 7 for spirals and v/{\\sigma} > 5 for barred\ngalaxies. This study establishes a population-wide framework for linking galaxy\nmorphology and dynamics at cosmic noon, providing a key reference for future\nstudies on the role of detailed structural features in galaxy evolution.",
+    "url": "http://arxiv.org/abs/2503.21738v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21738v1",
+    "published": "2025-03-27T17:50:32+00:00",
+    "updated": "2025-03-27T17:50:32+00:00",
+    "categories": [
+      "astro-ph.GA"
+    ],
+    "source": "arxiv"
+  },
+  {
+    "title": "Local Primordial non-Gaussian Bias from Time Evolution",
+    "authors": "James M. Sullivan, Uros Seljak",
+    "abstract": "Primordial non-Gaussianity (PNG) is a signature of fundamental physics in the\nearly universe that is probed by cosmological observations. It is well known\nthat the local type of PNG generates a strong signal in the two-point function\nof large-scale structure tracers, such as galaxies. This signal, often termed\n``scale-dependent bias'' is a generic feature of modulation of gravitational\nstructure formation by a large-scale mode. It is less well-appreciated that the\ncoefficient controlling this signal, $b_{\\phi}$, is closely connected to the\ntime evolution of the tracer number density. This correspondence between time\nevolution and local PNG can be simply explained for a universal tracer whose\nmass function only depends on peak height, and more generally for non-universal\ntracers in the separate universe picture, which we validate in simulations. We\nalso describe how to recover the bias of tracers subject to a survey selection\nfunction, and perform a simple demonstration on simulated galaxies. Since the\nlocal PNG amplitude in $n-$point statistics ($f_{\\rm NL}$) is largely\ndegenerate with the coefficient $b_{\\phi}$, this proof of concept study\ndemonstrates that galaxy survey data can allow for more optimal and robust\nextraction of local PNG information from upcoming surveys.",
+    "url": "http://arxiv.org/abs/2503.21736v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21736v1",
+    "published": "2025-03-27T17:49:31+00:00",
+    "updated": "2025-03-27T17:49:31+00:00",
+    "categories": [
+      "astro-ph.CO"
+    ],
+    "source": "arxiv"
+  },
+  {
+    "title": "GateLens: A Reasoning-Enhanced LLM Agent for Automotive Software Release Analytics",
+    "authors": "Arsham Gholamzadeh Khoee, Shuai Wang, Yinan Yu, Robert Feldt, Dhasarathy Parthasarathy",
+    "abstract": "Ensuring the reliability and effectiveness of software release decisions is\ncritical, particularly in safety-critical domains like automotive systems.\nPrecise analysis of release validation data, often presented in tabular form,\nplays a pivotal role in this process. However, traditional methods that rely on\nmanual analysis of extensive test datasets and validation metrics are prone to\ndelays and high costs. Large Language Models (LLMs) offer a promising\nalternative but face challenges in analytical reasoning, contextual\nunderstanding, handling out-of-scope queries, and processing structured test\ndata consistently; limitations that hinder their direct application in\nsafety-critical scenarios. This paper introduces GateLens, an LLM-based tool\nfor analyzing tabular data in the automotive domain. GateLens translates\nnatural language queries into Relational Algebra (RA) expressions and then\ngenerates optimized Python code. It outperforms the baseline system on\nbenchmarking datasets, achieving higher F1 scores and handling complex and\nambiguous queries with greater robustness. Ablation studies confirm the\ncritical role of the RA module, with performance dropping sharply when omitted.\nIndustrial evaluations reveal that GateLens reduces analysis time by over 80%\nwhile maintaining high accuracy and reliability. As demonstrated by presented\nresults, GateLens achieved high performance without relying on few-shot\nexamples, showcasing strong generalization across various query types from\ndiverse company roles. Insights from deploying GateLens with a partner\nautomotive company offer practical guidance for integrating AI into critical\nworkflows such as release validation. Results show that by automating test\nresult analysis, GateLens enables faster, more informed, and dependable release\ndecisions, and can thus advance software scalability and reliability in\nautomotive systems.",
+    "url": "http://arxiv.org/abs/2503.21735v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21735v1",
+    "published": "2025-03-27T17:48:32+00:00",
+    "updated": "2025-03-27T17:48:32+00:00",
+    "categories": [
+      "cs.SE",
+      "cs.AI",
+      "cs.CL",
+      "cs.MA"
+    ],
+    "source": "arxiv"
+  },
+  {
+    "title": "Structure and Melting of Fe, MgO, SiO2, and MgSiO3 in Planets: Database, Inversion, and Phase Diagram",
+    "authors": "Junjie Dong, Gabriel-Darius Mardaru, Paul D. Asimow, Lars P. Stixrude, Rebecca A. Fischer",
+    "abstract": "We present globally inverted pressure-temperature (P-T) phase diagrams up to\n5,000 GPa for four fundamental planetary materials, Fe, MgO, SiO2, and MgSiO3,\nderived from logistic regression and supervised learning, together with an\nexperimental phase equilibria database. These new P-T phase diagrams provide a\nsolution to long-standing disputes about their melting curves. Their\nimplications extend to the melting and freezing of rocky materials in the\ninterior of giant planets and super-Earth exoplanets, contributing to the\nrefinement of their internal structure models.",
+    "url": "http://arxiv.org/abs/2503.21734v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21734v1",
+    "published": "2025-03-27T17:48:04+00:00",
+    "updated": "2025-03-27T17:48:04+00:00",
+    "categories": [
+      "astro-ph.EP",
+      "physics.data-an",
+      "physics.geo-ph"
+    ],
+    "source": "arxiv"
+  },
+  {
+    "title": "Effective Skill Unlearning through Intervention and Abstention",
+    "authors": "Yongce Li, Chung-En Sun, Tsui-Wei Weng",
+    "abstract": "Large language Models (LLMs) have demonstrated remarkable skills across\nvarious domains. Understanding the mechanisms behind their abilities and\nimplementing controls over them is becoming increasingly important for\ndeveloping better models. In this paper, we focus on skill unlearning in LLMs,\nspecifically unlearning a particular skill while retaining their overall\ncapabilities. We introduce two lightweight, training-free machine skill\nunlearning techniques for LLMs. First, we observe that the pre-activation\ndistribution of neurons in each Feed-Forward Layer (FFL) differs when the model\ndemonstrates different skills. Additionally, we find that queries triggering\nthe same skill cluster within the FFL key space and can be separated from other\nqueries using a hypercube. Based on these observations, we propose two\nlightweight, training-free skill unlearning methods via \\textit{intervention}\nand \\textit{abstention} respectively: \\texttt{Neuron Adjust} and \\texttt{Key\nSpace Detection}. We evaluate our methods on unlearning math-solving,\nPython-coding, and comprehension skills across seven different languages. The\nresults demonstrate their strong unlearning capabilities for the designated\nskills. Specifically, \\texttt{Key Space Detection} achieves over 80\\% relative\nperformance drop on the forgetting skill and less than 10\\% relative\nperformance drop on other skills and the model's general knowledge (MMLU) for\nmost unlearning tasks. Our code is available at\nhttps://github.com/Trustworthy-ML-Lab/effective_skill_unlearning",
+    "url": "http://arxiv.org/abs/2503.21730v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21730v1",
+    "published": "2025-03-27T17:45:06+00:00",
+    "updated": "2025-03-27T17:45:06+00:00",
+    "categories": [
+      "cs.CL",
+      "cs.LG"
+    ],
+    "source": "arxiv"
+  },
+  {
+    "title": "ReaRAG: Knowledge-guided Reasoning Enhances Factuality of Large Reasoning Models with Iterative Retrieval Augmented Generation",
+    "authors": "Zhicheng Lee, Shulin Cao, Jinxin Liu, Jiajie Zhang, Weichuan Liu, Xiaoyin Che, Lei Hou, Juanzi Li",
+    "abstract": "Large Reasoning Models (LRMs) exhibit remarkable reasoning abilities but rely\nprimarily on parametric knowledge, limiting factual accuracy. While recent\nworks equip reinforcement learning (RL)-based LRMs with retrieval capabilities,\nthey suffer from overthinking and lack robustness in reasoning, reducing their\neffectiveness in question answering (QA) tasks. To address this, we propose\nReaRAG, a factuality-enhanced reasoning model that explores diverse queries\nwithout excessive iterations. Our solution includes a novel data construction\nframework with an upper bound on the reasoning chain length. Specifically, we\nfirst leverage an LRM to generate deliberate thinking, then select an action\nfrom a predefined action space (Search and Finish). For Search action, a query\nis executed against the RAG engine, where the result is returned as observation\nto guide reasoning steps later. This process iterates until a Finish action is\nchosen. Benefiting from ReaRAG's strong reasoning capabilities, our approach\noutperforms existing baselines on multi-hop QA. Further analysis highlights its\nstrong reflective ability to recognize errors and refine its reasoning\ntrajectory. Our study enhances LRMs' factuality while effectively integrating\nrobust reasoning for Retrieval-Augmented Generation (RAG).",
+    "url": "http://arxiv.org/abs/2503.21729v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21729v1",
+    "published": "2025-03-27T17:44:18+00:00",
+    "updated": "2025-03-27T17:44:18+00:00",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "source": "arxiv"
+  },
+  {
+    "title": "Enhancing Underwater Navigation through Cross-Correlation-Aware Deep INS/DVL Fusion",
+    "authors": "Nadav Cohen, Itzik Klein",
+    "abstract": "The accurate navigation of autonomous underwater vehicles critically depends\non the precision of Doppler velocity log (DVL) velocity measurements. Recent\nadvancements in deep learning have demonstrated significant potential in\nimproving DVL outputs by leveraging spatiotemporal dependencies across multiple\nsensor modalities. However, integrating these estimates into model-based\nfilters, such as the extended Kalman filter, introduces statistical\ninconsistencies, most notably, cross-correlations between process and\nmeasurement noise. This paper addresses this challenge by proposing a\ncross-correlation-aware deep INS/DVL fusion framework. Building upon BeamsNet,\na convolutional neural network designed to estimate AUV velocity using DVL and\ninertial data, we integrate its output into a navigation filter that explicitly\naccounts for the cross-correlation induced between the noise sources. This\napproach improves filter consistency and better reflects the underlying sensor\nerror structure. Evaluated on two real-world underwater trajectories, the\nproposed method outperforms both least squares and cross-correlation-neglecting\napproaches in terms of state uncertainty. Notably, improvements exceed 10% in\nvelocity and misalignment angle confidence metrics. Beyond demonstrating\nempirical performance, this framework provides a theoretically principled\nmechanism for embedding deep learning outputs within stochastic filters.",
+    "url": "http://arxiv.org/abs/2503.21727v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21727v1",
+    "published": "2025-03-27T17:38:43+00:00",
+    "updated": "2025-03-27T17:38:43+00:00",
+    "categories": [
+      "cs.RO"
+    ],
+    "source": "arxiv"
+  },
+  {
+    "title": "Towards Intelligent Control of MeV Energy Electrons and Protons from kHz Repetition Rate Ultra-Intense Laser Plasma Interactions",
+    "authors": "Nathaniel Tamminga, Scott Feister, Kyle D. Frische, Ronak Desai, Joseph Snyder, John J. Felice, Joseph R. Smith, Chris Orban, Enam A. Chowdhury, Michael L. Dexter, Anil K. Patnaik",
+    "abstract": "Ultra-intense laser-matter interactions are often difficult to predict from\nfirst principles because of the complexity of plasma processes and the many\ndegrees of freedom relating to the laser and target parameters. An important\napproach to controlling and optimizing ultra-intense laser interactions\ninvolves gathering large data sets and using this data to train statistical and\nmachine learning models. In this paper we describe experimental efforts to\naccelerate electrons and protons to $\\sim$MeV energies with this goal in mind.\nThese experiments involve a 1 kHz repetition rate ultra-intense laser system\nwith $\\sim$10mJ per shot, a peak intensity near $5 \\times 10^{18}$ W/cm$^{2}$,\nand a \"liquid leaf\" target. Improvements to the data acquisition capabilities\nof this laser system greatly aided this investigation. Generally, we find that\nthe trained models were very effective for controlling the numbers of MeV\nelectrons ejected. The models were less successful at shifting the energy range\nof ejected electrons. Simultaneous control of the numbers of $\\sim$MeV\nelectrons and the energy range will be the subject of future experimentation\nusing this platform.",
+    "url": "http://arxiv.org/abs/2503.21726v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21726v1",
+    "published": "2025-03-27T17:37:23+00:00",
+    "updated": "2025-03-27T17:37:23+00:00",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "source": "arxiv"
+  },
+  {
+    "title": "Low-noise environment for probing fundamental symmetries",
+    "authors": "F. J. Collings, N. J. Fitch, J. M. Dyne, R. A. Jenkins, E. Wursten, M. T. Ziemba, X. S. Zheng, F. Castellini, J. Lim, B. E. Sauer, M. R. Tarbutt",
+    "abstract": "We present the design and characterization of a low-noise environment for\nmeasuring the electron's electric dipole moment (EDM) with a beam of molecules.\nTo minimize magnetic Johnson noise from metals, the design features ceramic\nelectric field plates housed in a glass vacuum chamber. To suppress external\nmagnetic noise the apparatus is enclosed within a cylindrical four-layer\nmu-metal shield with a shielding factor exceeding $10^6$ in one radial\ndirection and $10^5$ in the other. Finite element modelling shows that the\ndifference between these shielding factors is due to imperfect joints between\nsections of mu-metal. Using atomic magnetometers to monitor the magnetic field\ninside the shield, we measure noise below 40 fT/$\\sqrt{{\\rm Hz}}$ at 1 Hz and\nabove, rising to 500 fT/$\\sqrt{{\\rm Hz}}$ at 0.1 Hz. Analytical and numerical\nstudies show that residual magnetic Johnson noise contributes approximately 13\nfT/$\\sqrt{{\\rm Hz}}$. The background magnetic field averaged along the beamline\nis maintained below 3 pT, with typical gradients of a few nT/m. An electric\nfield of 20 kV/cm is applied without discharges and with leakage currents below\n1 nA. Each magnetometer measures the magnetic field correlated with the\ndirection of the applied electric field with a precision of 0.11 fT in 104\nhours of data. These results demonstrate that the apparatus is suitable for\nmeasuring the electron EDM with precision at the $10^{-31}$ e cm level. The\ndesign principles and characterization techniques presented here are broadly\napplicable to precision measurements probing fundamental symmetries in\nmolecules, atoms, and neutrons.",
+    "url": "http://arxiv.org/abs/2503.21725v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21725v1",
+    "published": "2025-03-27T17:37:12+00:00",
+    "updated": "2025-03-27T17:37:12+00:00",
+    "categories": [
+      "physics.atom-ph"
+    ],
+    "source": "arxiv"
+  },
+  {
+    "title": "Energy Minimization for Participatory Federated Learning in IoT Analyzed via Game Theory",
+    "authors": "Alessandro Buratto, Elia Guerra, Marco Miozzo, Paolo Dini, Leonardo Badia",
+    "abstract": "The Internet of Things requires intelligent decision making in many\nscenarios. To this end, resources available at the individual nodes for sensing\nor computing, or both, can be leveraged. This results in approaches known as\nparticipatory sensing and federated learning, respectively. We investigate the\nsimultaneous implementation of both, through a distributed approach based on\nempowering local nodes with game theoretic decision making. A global objective\nof energy minimization is combined with the individual node's optimization of\nlocal expenditure for sensing and transmitting data over multiple learning\nrounds. We present extensive evaluations of this technique, based on both a\ntheoretical framework and experiments in a simulated network scenario with real\ndata. Such a distributed approach can reach a desired level of accuracy for\nfederated learning without a centralized supervision of the data collector.\nHowever, depending on the weight attributed to the local costs of the single\nnode, it may also result in a significantly high Price of Anarchy (from 1.28\nonwards). Thus, we argue for the need of incentive mechanisms, possibly based\non Age of Information of the single nodes.",
+    "url": "http://arxiv.org/abs/2503.21722v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21722v1",
+    "published": "2025-03-27T17:35:38+00:00",
+    "updated": "2025-03-27T17:35:38+00:00",
+    "categories": [
+      "cs.LG",
+      "cs.MA"
+    ],
+    "source": "arxiv"
+  },
+  {
+    "title": "Collab: Controlled Decoding using Mixture of Agents for LLM Alignment",
+    "authors": "Souradip Chakraborty, Sujay Bhatt, Udari Madhushani Sehwag, Soumya Suvra Ghosal, Jiahao Qiu, Mengdi Wang, Dinesh Manocha, Furong Huang, Alec Koppel, Sumitra Ganesh",
+    "abstract": "Alignment of Large Language models (LLMs) is crucial for safe and trustworthy\ndeployment in applications. Reinforcement learning from human feedback (RLHF)\nhas emerged as an effective technique to align LLMs to human preferences and\nbroader utilities, but it requires updating billions of model parameters, which\nis computationally expensive. Controlled Decoding, by contrast, provides a\nmechanism for aligning a model at inference time without retraining. However,\nsingle-agent decoding approaches often struggle to adapt to diverse tasks due\nto the complexity and variability inherent in these tasks. To strengthen the\ntest-time performance w.r.t the target task, we propose a mixture of\nagent-based decoding strategies leveraging the existing off-the-shelf aligned\nLLM policies. Treating each prior policy as an agent in the spirit of mixture\nof agent collaboration, we develop a decoding method that allows for\ninference-time alignment through a token-level selection strategy among\nmultiple agents. For each token, the most suitable LLM is dynamically chosen\nfrom a pool of models based on a long-term utility metric. This\npolicy-switching mechanism ensures optimal model selection at each step,\nenabling efficient collaboration and alignment among LLMs during decoding.\nTheoretical analysis of our proposed algorithm establishes optimal performance\nwith respect to the target task represented via a target reward for the given\noff-the-shelf models. We conduct comprehensive empirical evaluations with\nopen-source aligned models on diverse tasks and preferences, which demonstrates\nthe merits of this approach over single-agent decoding baselines. Notably,\nCollab surpasses the current SoTA decoding strategy, achieving an improvement\nof up to 1.56x in average reward and 71.89% in GPT-4 based win-tie rate.",
+    "url": "http://arxiv.org/abs/2503.21720v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21720v1",
+    "published": "2025-03-27T17:34:25+00:00",
+    "updated": "2025-03-27T17:34:25+00:00",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "source": "arxiv"
+  },
+  {
+    "title": "Outlier dimensions favor frequent tokens in language model",
+    "authors": "Iuri Macocco, Nora Graichen, Gemma Boleda, Marco Baroni",
+    "abstract": "We study last-layer outlier dimensions, i.e.dimensions that display extreme\nactivations for the majority of inputs. We show that outlier dimensions arise\nin many different modern language models, and trace their function back to the\nheuristic of constantly predicting frequent words. We further show how a model\ncan block this heuristic when it is not contextually appropriate, by assigning\na counterbalancing weight mass to the remaining dimensions, and we investigate\nwhich model parameters boost outlier dimensions and when they arise during\ntraining. We conclude that outlier dimensions are a specialized mechanism\ndiscovered by many distinct models to implement a useful token prediction\nheuristic.",
+    "url": "http://arxiv.org/abs/2503.21718v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21718v1",
+    "published": "2025-03-27T17:30:50+00:00",
+    "updated": "2025-03-27T17:30:50+00:00",
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "I.2.7"
+    ],
+    "source": "arxiv"
+  },
+  {
+    "title": "Enhancing Repository-Level Software Repair via Repository-Aware Knowledge Graphs",
+    "authors": "Boyang Yang, Haoye Tian, Jiadong Ren, Shunfu Jin, Yang Liu, Feng Liu, Bach Le",
+    "abstract": "Repository-level software repair faces challenges in bridging semantic gaps\nbetween issue descriptions and code patches. Existing approaches, which mostly\ndepend on large language models (LLMs), suffer from semantic ambiguities,\nlimited structural context understanding, and insufficient reasoning\ncapability. To address these limitations, we propose KGCompass with two\ninnovations: (1) a novel repository-aware knowledge graph (KG) that accurately\nlinks repository artifacts (issues and pull requests) and codebase entities\n(files, classes, and functions), allowing us to effectively narrow down the\nvast search space to only 20 most relevant functions with accurate candidate\nbug locations and contextual information, and (2) a path-guided repair\nmechanism that leverages KG-mined entity path, tracing through which allows us\nto augment LLMs with relevant contextual information to generate precise\npatches along with their explanations. Experimental results in the\nSWE-Bench-Lite demonstrate that KGCompass achieves state-of-the-art repair\nperformance (45.67%) and function-level localization accuracy (51.33%) across\nopen-source approaches, costing only $0.20 per repair. Our analysis reveals\nthat among successfully localized bugs, 69.7% require multi-hop traversals\nthrough the knowledge graph, without which LLM-based approaches struggle to\naccurately locate bugs. The knowledge graph built in KGCompass is language\nagnostic and can be incrementally updated, making it a practical solution for\nreal-world development environments.",
+    "url": "http://arxiv.org/abs/2503.21710v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21710v1",
+    "published": "2025-03-27T17:21:47+00:00",
+    "updated": "2025-03-27T17:21:47+00:00",
+    "categories": [
+      "cs.SE"
+    ],
+    "source": "arxiv"
+  },
+  {
+    "title": "Redefining Network Topology in Complex Systems: Merging Centrality Metrics, Spectral Theory, and Diffusion Dynamics",
+    "authors": "Arsh Jha",
+    "abstract": "This paper introduces a novel framework that combines traditional centrality\nmeasures with eigenvalue spectra and diffusion processes for a more\ncomprehensive analysis of complex networks. While centrality measures such as\ndegree, closeness, and betweenness have been commonly used to assess nodal\nimportance, they provide limited insight into dynamic network behaviors. By\nincorporating eigenvalue analysis, which evaluates network robustness and\nconnectivity through spectral properties, and diffusion processes that model\ninformation flow, this framework offers a deeper understanding of how networks\nfunction under dynamic conditions. Applied to synthetic networks, the approach\nidentifies key nodes not only by centrality but also by their role in diffusion\ndynamics and vulnerability points, offering a multi-dimensional view that\ntraditional methods alone cannot. This integrated analysis enables a more\nprecise identification of critical nodes and potential weaknesses, with\nimplications for improving network resilience in fields ranging from\nepidemiology to cybersecurity. Keywords: Centrality measures, eigenvalue\nspectra, diffusion processes, network analysis, network robustness, information\nflow, synthetic networks.",
+    "url": "http://arxiv.org/abs/2503.21709v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21709v1",
+    "published": "2025-03-27T17:21:46+00:00",
+    "updated": "2025-03-27T17:21:46+00:00",
+    "categories": [
+      "cs.OH"
+    ],
+    "source": "arxiv"
+  },
+  {
+    "title": "Elementwise Layer Normalization",
+    "authors": "Felix Stollenwerk",
+    "abstract": "A recent paper proposed Dynamic Tanh (DyT) as a drop-in replacement for Layer\nNormalization. Although the method is empirically well-motivated and appealing\nfrom a practical point of view, it lacks a theoretical foundation. In this\nwork, we derive DyT mathematically and show that a well-defined approximation\nis needed to do so. By dropping said approximation, an alternative element-wise\ntransformation is obtained, which we call Elementwise Layer Normalization\n(ELN). We demonstrate that ELN resembles Layer Normalization more accurately\nthan DyT does.",
+    "url": "http://arxiv.org/abs/2503.21708v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21708v1",
+    "published": "2025-03-27T17:20:44+00:00",
+    "updated": "2025-03-27T17:20:44+00:00",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "source": "arxiv"
+  },
+  {
+    "title": "Heterostructure Effects on the Magnetocrystalline Anisotropy Energy of MnN",
+    "authors": "Robert A. Lawrence, Matt I. J. Probert",
+    "abstract": "Thin film effects on the Magnetocrystalline Anisotropy Energy (MAE) of MnN\nwere studied using density functional theory (DFT). Initially, strain effects\non bulk MnN were considered as a proxy for lattice-matching induced strain and\na linear relationship between the c/a ratio and the MAE was found. This\nrelationship was explained in terms of underlying point group symmetry. Strain\nand charge-transfer effects were then considered for an ultra-thin film. It was\nfound that a Ta seed-layer suppresses the net spin moment on the Mn ions,\nleading to a reduction of the MAE.",
+    "url": "http://arxiv.org/abs/2503.21707v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21707v1",
+    "published": "2025-03-27T17:20:42+00:00",
+    "updated": "2025-03-27T17:20:42+00:00",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "source": "arxiv"
+  },
+  {
+    "title": "Flashlights: Prospects for constraining the Initial Mass Function around cosmic noon with caustic-crossing events",
+    "authors": "Ashish Kumar Meena, Sung Kei Li, Adi Zitrin, Patrick L. Kelly, Tom Broadhurst, Wenlei Chen, Jose M. Diego, Alexei V. Filippenko, Lukas J. Furtak, Liliya L. R. Williams",
+    "abstract": "The Flashlights program with the Hubble Space Telescope imaged the six Hubble\nFrontier Fields galaxy clusters in two epochs and detected twenty transients.\nThese are primarily expected to be caustic-crossing events (CCEs) where bright\nstars in distant lensed galaxies, typically at redshift $z\\approx1$--3, get\ntemporarily magnified close to cluster caustics. Since CCEs are generally\nbiased toward more massive and luminous stars, they offer a unique route for\nprobing the high end of the stellar mass function. We take advantage of the\nFlashlights event statistics to place preliminary constraints on the stellar\ninitial mass function (IMF) around cosmic noon. The photometry (along with\nspectral information) of lensed arcs is used to infer their various stellar\nproperties, and stellar synthesis models are used to evolve a recent stellar\npopulation in them. We estimate the microlens surface density near each arc\nand, together with existing lens models and simple formalism for CCEs,\ncalculate the expected rate for a given IMF. We find that, on average, a\nSalpeter-like IMF ($\\alpha=2.35$) underpredicts the number of observed CCEs by\na factor of ${\\sim}0.7$, and a top-heavy IMF ($\\alpha=1.00$) overpredicts by a\nfactor of ${\\sim}1.7$, suggesting that the average IMF slope may lie somewhere\nin between. However, given the large uncertainties associated with estimating\nthe stellar populations, these results are strongly model-dependent.\nNevertheless, we introduce a useful framework for constraining the IMF using\nCCEs. Observations with JWST are already yielding many more CCEs and will soon\nenable more stringent constraints on the IMF at a range of redshifts.",
+    "url": "http://arxiv.org/abs/2503.21706v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21706v1",
+    "published": "2025-03-27T17:20:35+00:00",
+    "updated": "2025-03-27T17:20:35+00:00",
+    "categories": [
+      "astro-ph.GA",
+      "astro-ph.CO"
+    ],
+    "source": "arxiv"
+  },
+  {
+    "title": "SoK: Towards Reproducibility for Software Packages in Scripting Language Ecosystems",
+    "authors": "Timo Pohl, Pavel Nov\u00e1k, Marc Ohm, Michael Meier",
+    "abstract": "The disconnect between distributed software artifacts and their supposed\nsource code enables attackers to leverage the build process for inserting\nmalicious functionality. Past research in this field focuses on compiled\nlanguage ecosystems, mostly analysing Linux distribution packages. However, the\npopular scripting language ecosystems potentially face unique issues given the\nsystematic difference in distributed artifacts. This SoK provides an overview\nof existing research, aiming to highlight future directions, as well as chances\nto transfer existing knowledge from compiled language ecosystems. To that end,\nwe work out key aspects in current research, systematize identified challenges\nfor software reproducibility, and map them between the ecosystems. We find that\nthe literature is sparse, focusing on few individual problems and ecosystems.\nThis allows us to effectively identify next steps to improve reproducibility in\nthis field.",
+    "url": "http://arxiv.org/abs/2503.21705v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21705v1",
+    "published": "2025-03-27T17:10:38+00:00",
+    "updated": "2025-03-27T17:10:38+00:00",
+    "categories": [
+      "cs.SE",
+      "cs.CR"
+    ],
+    "source": "arxiv"
+  },
+  {
+    "title": "Learning to Represent Individual Differences for Choice Decision Making",
+    "authors": "Yan-Ying Chen, Yue Weng, Alexandre Filipowicz, Rumen Iliev, Francine Chen, Shabnam Hakimi, Yanxia Zhang, Matthew Lee, Kent Lyons, Charlene Wu",
+    "abstract": "Human decision making can be challenging to predict because decisions are\naffected by a number of complex factors. Adding to this complexity,\ndecision-making processes can differ considerably between individuals, and\nmethods aimed at predicting human decisions need to take individual differences\ninto account. Behavioral science offers methods by which to measure individual\ndifferences (e.g., questionnaires, behavioral models), but these are often\nnarrowed down to low dimensions and not tailored to specific prediction tasks.\nThis paper investigates the use of representation learning to measure\nindividual differences from behavioral experiment data. Representation learning\noffers a flexible approach to create individual embeddings from data that are\nboth structured (e.g., demographic information) and unstructured (e.g., free\ntext), where the flexibility provides more options for individual difference\nmeasures for personalization, e.g., free text responses may allow for\nopen-ended questions that are less privacy-sensitive. In the current paper we\nuse representation learning to characterize individual differences in human\nperformance on an economic decision-making task. We demonstrate that models\nusing representation learning to capture individual differences consistently\nimprove decision predictions over models without representation learning, and\neven outperform well-known theory-based behavioral models used in these\nenvironments. Our results propose that representation learning offers a useful\nand flexible tool to capture individual differences.",
+    "url": "http://arxiv.org/abs/2503.21704v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21704v1",
+    "published": "2025-03-27T17:10:05+00:00",
+    "updated": "2025-03-27T17:10:05+00:00",
+    "categories": [
+      "cs.LG",
+      "cs.CL"
+    ],
+    "source": "arxiv"
+  },
+  {
+    "title": "Enabling Robust Exoplanet Atmospheric Retrievals with Gaussian Processes",
+    "authors": "Yoav Rotman, Luis Welbanks, Michael R. Line, Peter McGill, Michael Radica, Matthew C. Nixon",
+    "abstract": "Atmospheric retrievals are essential tools for interpreting exoplanet\ntransmission and eclipse spectra, enabling quantitative constraints on the\nchemical composition, aerosol properties, and thermal structure of planetary\natmospheres. The James Webb Space Telescope (JWST) offers unprecedented\nspectral precision, resolution, and wavelength coverage, unlocking\ntransformative insights into the formation, evolution, climate, and potential\nhabitability of planetary systems. However, this opportunity is accompanied by\nchallenges: modeling assumptions and unaccounted-for noise or signal sources\ncan bias retrieval outcomes and their interpretation. To address these\nlimitations, we introduce a Gaussian Process (GP)-aided atmospheric retrieval\nframework that flexibly accounts for unmodeled features in exoplanet spectra,\nwhether global or localized. We validate this method on synthetic JWST\nobservations and show that GP-aided retrievals reduce bias in inferred\nabundances and better capture model-data mismatches than traditional\napproaches. We also introduce the concept of mean squared error to quantify the\ntrade-off between bias and variance, arguing that this metric more accurately\nreflects retrieval performance than bias alone. We then reanalyze the\nNIRISS/SOSS JWST transmission spectrum of WASP-96 b, finding that GP-aided\nretrievals yield broader constraints on CO$_2$ and H$_2$O, alleviating tension\nbetween previous retrieval results and equilibrium predictions. Our GP\nframework provides precise and accurate constraints while highlighting regions\nwhere models fail to explain the data. As JWST matures and future facilities\ncome online, a deeper understanding of the limitations of both data and models\nwill be essential, and GP-enabled retrievals like the one presented here offer\na principled path forward.",
+    "url": "http://arxiv.org/abs/2503.21702v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21702v1",
+    "published": "2025-03-27T17:06:09+00:00",
+    "updated": "2025-03-27T17:06:09+00:00",
+    "categories": [
+      "astro-ph.EP",
+      "astro-ph.IM"
+    ],
+    "source": "arxiv"
+  },
+  {
+    "title": "Machine Learning Assisted Modeling of Amorphous TiO$_2$-Doped GeO$_2$ for Advanced LIGO Mirror Coatings",
+    "authors": "Jun Jiang, Rui Zhang, Kiran Prasai, Riccardo Bassiri, James N. Fry, Martin M. Fejer, Hai-Ping Cheng",
+    "abstract": "The mechanical loss angle of amorphous TiO$_2$-doped GeO$_2$ can be lower\nthan 10$^{-4}$, making it a candidate for Laser Interferometer\nGravitational-wave Observatory (LIGO) mirror coatings. Amorphous oxides have\ncomplex atomic structures that are influenced by various factors, including\ndoping concentration, preparation, and thermal history, resulting in different\nmass densities and physical properties. Modeling at atomistic level enables\ncapturing these effects by generating atomic structure models according to\nexperimental conditions. In order to obtain reliable and physical amorphous\nmodels at an affordable cost, we develop classical and machine-learning\npotentials (MLP) to speed up simulations. First-principles calculations are\nused to train and validate MLP as well as validating structure models. To\nbetter reproduce properties such as elastic modulus, radial distribution\nfunction (RDF) and the variations in mass density of doped amorphous oxides,\ndensity functional theory (DFT) calculations are used to optimize the final\nmodels. We find that the mass densities of amorphous systems are correlated\nwith the total void volume. The experimental mass density matches the models\nwith the most symmetric potential energy wells under volume change. The elastic\nresponse of the metal-oxygen network is also studied. The 27\\% TiO$_2$ doped\nGeO$_2$ system shows the least number of large atom-atom distance changes,\nwhile for 44\\% TiO$_2$ doped GeO$_2$, a majority of Ti-O distances are\nsignificantly changed. In response to strains, the metal-oxygen network at low\nmass densities prefers to adjust bond angles, while at high mass densities, the\nadjustment is mainly done by changing atom-atom distance.",
+    "url": "http://arxiv.org/abs/2503.21701v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21701v1",
+    "published": "2025-03-27T17:05:07+00:00",
+    "updated": "2025-03-27T17:05:07+00:00",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "source": "arxiv"
+  },
+  {
+    "title": "Anisotropic light-tailored RKKY interaction in two-dimensional $d$-wave altermagnets",
+    "authors": "Mohsen Yarmohammadi, Ulrich Z\u00fclicke, Jamal Berakdar, Jacob Linder, James K. Freericks",
+    "abstract": "Altermagnets are known in spintronics for their intrinsic spin-splitting and\nunconventional magnetic responses, particularly to magnetic impurities.\nHowever, effectively controlling the magnetic exchange interactions in\naltermagnets is challenging for practical applications. Here, we propose using\ncircularly polarized light to tune the Ruderman-Kittel-Kasuya-Yosida (RKKY)\ninteraction in two-dimensional $d$-wave altermagnets. Using the real-space\nretarded Green's functions approach, our results show that while the Heisenberg\nand Ising exchanges dominate, a notable Dzyaloshinskii-Moriya (DM) interaction\nalso plays a key role. Furthermore, the inherent strength of altermagnetism\nimprints chirp-like signatures into the magnetic responses, which can be\ndynamically tuned via light. We mainly demonstrate that gate-induced Rashba\nspin-orbit coupling is essential in response to light -- light selectively and\nanisotropically adjusts the DM interaction without affecting the other\nexchanges. Our findings further indicate that rotating the altermagnet by\n$45^\\circ$ relative to the light's polarization direction generates a\nDirac-like dispersion and different DM interactions. We finally extract\ncritical thresholds where light reverses DM interactions along one axis or\nbalances both in-plane components. The anisotropic light-driven control of RKKY\ninteractions in 2D altermagnets not only highlights their unique properties but\nalso opens new avenues for engineering tailored magnetic characteristics in\nspintronic applications.",
+    "url": "http://arxiv.org/abs/2503.21698v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21698v1",
+    "published": "2025-03-27T17:03:27+00:00",
+    "updated": "2025-03-27T17:03:27+00:00",
+    "categories": [
+      "cond-mat.mes-hall"
+    ],
+    "source": "arxiv"
+  },
+  {
+    "title": "Embodied-Reasoner: Synergizing Visual Search, Reasoning, and Action for Embodied Interactive Tasks",
+    "authors": "Wenqi Zhang, Mengna Wang, Gangao Liu, Xu Huixin, Yiwei Jiang, Yongliang Shen, Guiyang Hou, Zhe Zheng, Hang Zhang, Xin Li, Weiming Lu, Peng Li, Yueting Zhuang",
+    "abstract": "Recent advances in deep thinking models have demonstrated remarkable\nreasoning capabilities on mathematical and coding tasks. However, their\neffectiveness in embodied domains which require continuous interaction with\nenvironments through image action interleaved trajectories remains largely\n-unexplored. We present Embodied Reasoner, a model that extends o1 style\nreasoning to interactive embodied search tasks. Unlike mathematical reasoning\nthat relies primarily on logical deduction, embodied scenarios demand spatial\nunderstanding, temporal reasoning, and ongoing self-reflection based on\ninteraction history. To address these challenges, we synthesize 9.3k coherent\nObservation-Thought-Action trajectories containing 64k interactive images and\n90k diverse thinking processes (analysis, spatial reasoning, reflection,\nplanning, and verification). We develop a three-stage training pipeline that\nprogressively enhances the model's capabilities through imitation learning,\nself-exploration via rejection sampling, and self-correction through reflection\ntuning. The evaluation shows that our model significantly outperforms those\nadvanced visual reasoning models, e.g., it exceeds OpenAI o1, o3-mini, and\nClaude-3.7 by +9\\%, 24\\%, and +13\\%. Analysis reveals our model exhibits fewer\nrepeated searches and logical inconsistencies, with particular advantages in\ncomplex long-horizon tasks. Real-world environments also show our superiority\nwhile exhibiting fewer repeated searches and logical inconsistency cases.",
+    "url": "http://arxiv.org/abs/2503.21696v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21696v1",
+    "published": "2025-03-27T17:00:51+00:00",
+    "updated": "2025-03-27T17:00:51+00:00",
+    "categories": [
+      "cs.CL",
+      "cs.CV"
+    ],
+    "source": "arxiv"
+  },
+  {
+    "title": "AMA-SAM: Adversarial Multi-Domain Alignment of Segment Anything Model for High-Fidelity Histology Nuclei Segmentation",
+    "authors": "Jiahe Qian, Yaoyu Fang, Jinkui Hao, Bo Zhou",
+    "abstract": "Accurate segmentation of cell nuclei in histopathology images is essential\nfor numerous biomedical research and clinical applications. However, existing\ncell nucleus segmentation methods only consider a single dataset (i.e., primary\ndomain), while neglecting to leverage supplementary data from diverse sources\n(i.e., auxiliary domains) to reduce overfitting and enhance the performance.\nAlthough incorporating multiple datasets could alleviate overfitting, it often\nexacerbates performance drops caused by domain shifts. In this work, we\nintroduce Adversarial Multi-domain Alignment of Segment Anything Model\n(AMA-SAM) that extends the Segment Anything Model (SAM) to overcome these\nobstacles through two key innovations. First, we propose a Conditional Gradient\nReversal Layer (CGRL), a multi-domain alignment module that harmonizes features\nfrom diverse domains to promote domain-invariant representation learning while\npreserving crucial discriminative features for the primary dataset. Second, we\naddress SAM's inherent low-resolution output by designing a High-Resolution\nDecoder (HR-Decoder), which directly produces fine-grained segmentation maps in\norder to capture intricate nuclei boundaries in high-resolution histology\nimages. To the best of our knowledge, this is the first attempt to adapt SAM\nfor multi-dataset learning with application to histology nuclei segmentation.\nWe validate our method on several publicly available datasets, demonstrating\nconsistent and significant improvements over state-of-the-art approaches.",
+    "url": "http://arxiv.org/abs/2503.21695v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21695v1",
+    "published": "2025-03-27T16:59:39+00:00",
+    "updated": "2025-03-27T16:59:39+00:00",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "source": "arxiv"
+  },
+  {
+    "title": "Numerically efficient quasi-adiabatic propagator path integral approach with two independent non-commuting baths",
+    "authors": "R. Ovcharenko, B. P. Fingerhut",
+    "abstract": "Path integral methods, like the quasi-adiabatic propagator path integral\n(QUAPI), are widely used in general-purpose and highly accurate numerical\nbenchmark simulations of open quantum systems, particularly in regimes\ninaccessible to perturbative methods. Nevertheless, the applicability of the\nQUAPI method to realistic systems of interest is restricted by the\nexponentially growing computer memory requirements with respect to the size of\nthe quantum system and the time range of non-Markovian correlation effects.\nThis exponential ''wall'' becomes even more severe for multiple non-commuting\nfluctuating environments. In the present work, we address the numerical\nefficiency and accuracy of approximations that have been introduced for the\nQUAPI method with a single general environment, for the case of two independent\nnon-commuting environments where one of them is considered as a pure dephasing\nenvironment. Specifically, we consider a sharply defined cut-off of the memory\ntime, path filtering and mask assisted coarse graining of influence functional\ncoefficients (MACGIC-QUAPI) as approximations. We demonstrate that commonly\napplied numerical techniques such as path filtering cannot be straightforwardly\ntransferred to the two bath case even in the weak-coupling and quasi-Markovian\nlimits. On the other hand, the sharply defined memory cut-off can be accurately\nhandled with the mask assisted coarse graining (MACGIC-QUAPI) approach. Our\nfindings demonstrates that if system coupling operators to different baths do\nnot commute, the additive nature of the statistically independent environments\nmay be misleading. Particularly, the quasi-Markovian nature of a pure dephasing\nbath is lost, once there simultaneously exists another non-commuting source of\nfluctuations.",
+    "url": "http://arxiv.org/abs/2503.21693v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21693v1",
+    "published": "2025-03-27T16:58:13+00:00",
+    "updated": "2025-03-27T16:58:13+00:00",
+    "categories": [
+      "quant-ph",
+      "physics.chem-ph"
+    ],
+    "source": "arxiv"
+  },
+  {
+    "title": "RapidPoseTriangulation: Multi-view Multi-person Whole-body Human Pose Triangulation in a Millisecond",
+    "authors": "Daniel Bermuth, Alexander Poeppel, Wolfgang Reif",
+    "abstract": "The integration of multi-view imaging and pose estimation represents a\nsignificant advance in computer vision applications, offering new possibilities\nfor understanding human movement and interactions. This work presents a new\nalgorithm that improves multi-view multi-person pose estimation, focusing on\nfast triangulation speeds and good generalization capabilities. The approach\nextends to whole-body pose estimation, capturing details from facial\nexpressions to finger movements across multiple individuals and viewpoints.\nAdaptability to different settings is demonstrated through strong performance\nacross unseen datasets and configurations. To support further progress in this\nfield, all of this work is publicly accessible.",
+    "url": "http://arxiv.org/abs/2503.21692v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21692v1",
+    "published": "2025-03-27T16:57:33+00:00",
+    "updated": "2025-03-27T16:57:33+00:00",
+    "categories": [
+      "cs.CV"
+    ],
+    "source": "arxiv"
+  },
+  {
+    "title": "Place Capability Graphs: A General-Purpose Model of Rust's Ownership and Borrowing Guarantees",
+    "authors": "Zachary Grannan, Aurel B\u00edly, Jon\u00e1\u0161 Fiala, Jasper Geer, Markus de Medeiros, Peter M\u00fcller, Alexander J. Summers",
+    "abstract": "Rust's novel type system has proved an attractive target for verification and\nprogram analysis tools, due to the rich guarantees it provides for controlling\naliasing and mutability. However, fully understanding, extracting and\nexploiting these guarantees is subtle and challenging: existing models for\nRust's type checking either support a smaller idealised language disconnected\nfrom real-world Rust code, or come with severe limitations in terms of precise\nmodelling of Rust borrows, composite types storing them, function signatures\nand loops.\n  In this paper, we present a novel model of Rust's type-checking called Place\nCapability Graphs, which lifts these limitations, and which can be directly\ncalculated from the Rust compiler's own programmatic representations and\nanalyses. We demonstrate that our model supports over 98% of Rust functions in\nthe most popular public crates, and show its suitability as a general-purpose\nbasis for verification and program analysis tools by developing promising new\nprototype versions of the existing Flowistry and Prusti tools.",
+    "url": "http://arxiv.org/abs/2503.21691v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21691v1",
+    "published": "2025-03-27T16:55:41+00:00",
+    "updated": "2025-03-27T16:55:41+00:00",
+    "categories": [
+      "cs.PL"
+    ],
+    "source": "arxiv"
+  },
+  {
+    "title": "CMED: A Child Micro-Expression Dataset",
+    "authors": "Nikin~Matharaarachchi, Muhammad~Fermi Pasha, Sonya~Coleman, Kah PengWong",
+    "abstract": "Micro-expressions are short bursts of emotion that are difficult to hide.\nTheir detection in children is an important cue to assist psychotherapists in\nconducting better therapy. However, existing research on the detection of\nmicro-expressions has focused on adults, whose expressions differ in their\ncharacteristics from those of children. The lack of research is a direct\nconsequence of the lack of a child-based micro-expressions dataset as it is\nmuch more challenging to capture children's facial expressions due to the lack\nof predictability and controllability. This study compiles a dataset of\nspontaneous child micro-expression videos, the first of its kind, to the best\nof the authors knowledge. The dataset is captured in the wild using video\nconferencing software. This dataset enables us to then explore key features and\ndifferences between adult and child micro-expressions. This study also\nestablishes a baseline for the automated spotting and recognition of\nmicro-expressions in children using three approaches comprising of hand-created\nand learning-based approaches.",
+    "url": "http://arxiv.org/abs/2503.21690v1",
+    "pdf_url": "http://arxiv.org/pdf/2503.21690v1",
+    "published": "2025-03-27T16:55:32+00:00",
+    "updated": "2025-03-27T16:55:32+00:00",
+    "categories": [
+      "cs.CV"
+    ],
+    "source": "arxiv"
+  }
+]

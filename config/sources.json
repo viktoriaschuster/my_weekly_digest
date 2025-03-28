@@ -1,0 +1,28 @@
+{
+  "arxiv": {
+    "url": "https://arxiv.org",
+    "api_endpoint": "https://api.arxiv.org"
+  },
+  "biorxiv": {
+    "url": "https://www.biorxiv.org",
+    "api_endpoint": "https://api.biorxiv.org"
+  },
+  "blogs": [
+    {
+      "name": "Anthropic Transformer Circuits",
+      "url": "https://transformer-circuits.pub/"
+    },
+    {
+      "name": "Anthropic research",
+      "url": "https://www.anthropic.com/news"
+    },
+    {
+      "name": "OpenAI",
+      "url": "https://openai.com/research/index/publication/"
+    },
+    {
+      "name": "Google DeepMind",
+      "url": "https://deepmind.google/research/publications/"
+    }
+  ]
+}
